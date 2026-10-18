@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'heart-disease-fastapi'
+    static_configs:
+      - targets: ['host.docker.internal:8081']  # Or your cluster service DNS name
