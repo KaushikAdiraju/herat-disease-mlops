@@ -36,7 +36,7 @@ jobs:
         run: |
           python src/data_ingestion.py
           python src/preprocess.py
-          python src/train.py
+          python -m src.train
 
       - name: 6. Execute Unit & API Tests with Pytest
         run: |
